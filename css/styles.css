@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../images/backdrop2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.fix {
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.myjumbotron {
+  background-color: rgb(77, 236, 202);
+  font-family: "Notable", sans-serif;
+  font-size: 200px;
+  text-align: center;
+  color: orangered;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+ul {
+  float: right;
+  list-style-type: none;
+  margin: 25px;
+  color: white;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  border: 1px solid white;
+  transition: 0.6s ease;
+}
+
+ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+ul li .active a {
+  background-color: white;
+  color: black;
+}
+
+.gallery {
+  margin: 10px 50px;
+}
+.gallery img {
+  width: 230px;
+  padding: 5px;
+  filter: none;
+  transition: Is;
+}
+.gallery img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: orangered;
+}
+.footer .container {
+  background-color: rgb(77, 236, 202);
+  padding: 0;
+}
+.footer p {
+  margin: 0;
+}
+/* style inputs*/
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: brown;
+  color: aqua;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: blue;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: icon;
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column,
+  imput[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
